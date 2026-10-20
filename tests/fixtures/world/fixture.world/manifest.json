@@ -1,0 +1,45 @@
+{
+  "format": "ffworld",
+  "formatVersion": 1,
+  "id": "fixture",
+  "generationId": "1adbdaa3309c839a",
+  "worldRev": 0,
+  "width": 256,
+  "height": 256,
+  "tilewidth": 16,
+  "tileheight": 16,
+  "chunkSize": 64,
+  "packChunks": 16,
+  "chunksX": 4,
+  "chunksY": 4,
+  "packsX": 1,
+  "packsY": 1,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "layers": [
+    {"id":1,"name":"Ground","type":"tilelayer","tileIndex":0,"zIndex":0,"role":"tiles","visible":true,"tiled":{"keyOrder":["chunks","height","id","name","opacity","startx","starty","type","visible","width","x","y"],"extra":{"height":256,"opacity":1,"startx":0,"starty":0,"width":256,"x":0,"y":0},"chunks":{"width":16,"height":16}}},
+    {"id":2,"name":"Cliffs/Objects","type":"tilelayer","tileIndex":1,"zIndex":1,"role":"tiles","visible":true,"tiled":{"keyOrder":["chunks","height","id","name","opacity","startx","starty","type","visible","width","x","y"],"extra":{"height":256,"opacity":1,"startx":80,"starty":0,"width":176,"x":0,"y":0},"chunks":{"width":16,"height":16}}},
+    {"id":3,"name":"Details (Below Player 1)","type":"tilelayer","tileIndex":2,"zIndex":2,"role":"tiles","visible":true,"tiled":{"keyOrder":["chunks","height","id","name","opacity","startx","starty","type","visible","width","x","y"],"extra":{"height":256,"opacity":1,"startx":0,"starty":0,"width":256,"x":0,"y":0},"chunks":{"width":16,"height":16}}},
+    {"id":4,"name":"Details (Below Player 2)","type":"tilelayer","tileIndex":3,"zIndex":3,"role":"tiles","visible":true,"tiled":{"keyOrder":["chunks","height","id","name","opacity","startx","starty","type","visible","width","x","y"],"extra":{"height":256,"opacity":1,"startx":32,"starty":0,"width":224,"x":0,"y":0},"chunks":{"width":16,"height":16}}},
+    {"id":5,"name":"Details (Above Player 1)","type":"tilelayer","tileIndex":4,"zIndex":4,"role":"tiles","visible":true,"properties":[{"name":"shadows","type":"bool","value":true}],"tiled":{"keyOrder":["chunks","height","id","name","opacity","properties","startx","starty","type","visible","width","x","y"],"extra":{"height":256,"opacity":1,"startx":32,"starty":0,"width":224,"x":0,"y":0},"chunks":{"width":16,"height":16}}},
+    {"id":6,"name":"Details (Above Player 2)","type":"tilelayer","tileIndex":5,"zIndex":5,"role":"tiles","visible":true,"properties":[{"name":"shadows","type":"bool","value":true}],"tiled":{"keyOrder":["chunks","height","id","name","opacity","properties","startx","starty","type","visible","width","x","y"],"extra":{"height":256,"opacity":1,"startx":48,"starty":0,"width":208,"x":0,"y":0},"chunks":{"width":16,"height":16}}},
+    {"id":7,"name":"nopvpzone","type":"tilelayer","tileIndex":6,"zIndex":6,"role":"nopvp","visible":false,"locked":true,"properties":[{"name":"nopvp","type":"bool","value":true}],"tiled":{"keyOrder":["chunks","height","id","locked","name","opacity","properties","startx","starty","type","visible","width","x","y"],"extra":{"height":256,"opacity":1,"startx":32,"starty":0,"width":224,"x":0,"y":0},"chunks":{"width":16,"height":16}}},
+    {"id":8,"name":"Collisions","type":"tilelayer","tileIndex":7,"zIndex":7,"role":"collision","visible":false,"properties":[{"name":"collision","type":"bool","value":true}],"tiled":{"keyOrder":["chunks","height","id","name","opacity","properties","startx","starty","type","visible","width","x","y"],"extra":{"height":256,"opacity":1,"startx":0,"starty":0,"width":256,"x":0,"y":0},"chunks":{"width":16,"height":16}}},
+    {"id":9,"name":"Warps","type":"objectgroup","visible":true,"locked":true,"draworder":"topdown","tiled":{"keyOrder":["draworder","id","locked","name","objects","opacity","type","visible","x","y"],"extra":{"opacity":1,"x":0,"y":0}}},
+    {"id":10,"name":"Graveyards","type":"objectgroup","visible":true,"locked":true,"draworder":"topdown","tiled":{"keyOrder":["draworder","id","locked","name","objects","opacity","type","visible","x","y"],"extra":{"opacity":1,"x":0,"y":0}}}
+  ],
+  "tilesets": [{"columns":228,"firstgid":1,"image":"../../Mystika/assets/tilesets/environment.png","imageheight":3648,"imagewidth":3648,"margin":0,"name":"environment","spacing":0,"tilecount":51984,"tileheight":16,"tilewidth":16},{"columns":87,"firstgid":51985,"image":"../../Mystika/assets/tilesets/structures.png","imageheight":576,"imagewidth":1392,"margin":0,"name":"structures","spacing":0,"tilecount":3132,"tileheight":16,"tilewidth":16}],
+  "bitsets": {"collision":{"file":"collision.bits","hash":"566cb01f898a5d9c"},"nopvp":{"file":"nopvp.bits","hash":"047e9c063635aa87"}},
+  "packs": [
+    {"px":0,"py":0,"file":"packs/r0_0.ffp","packHash":"8de5956ada71b874","packRev":0}
+  ],
+  "spawn": null,
+  "nextObjectId": 5,
+  "objects": [
+    {"id":4,"layer":"Warps","name":"Fixture_Warp","type":"warp","x":1600,"y":1200,"width":32,"height":16,"properties":[{"name":"map","type":"string","value":"dungeon_inside"},{"name":"x","type":"int","value":400},{"name":"y","type":"int","value":400}],"opacity":1,"rotation":0,"visible":true},
+    {"id":3,"layer":"Graveyards","name":"Graveyard_3","type":"graveyard","x":1016,"y":664,"width":0,"height":0,"point":true,"opacity":1,"rotation":0,"visible":true}
+  ],
+  "warps": null,
+  "graveyards": null,
+  "source": {"generator":"map-generation/ffworld-import@1","mode":"import","seed":null,"configHash":null,"sourceFile":"fixture.tiled.json","sourceHash":"1adbdaa3309c839a","importShift":{"x":0,"y":0},"tiled":{"width":256,"height":256,"infinite":true,"keyOrder":["compressionlevel","height","infinite","layers","nextlayerid","nextobjectid","orientation","renderorder","tiledversion","tileheight","tilesets","tilewidth","type","version","width"],"extra":{"compressionlevel":-1,"nextlayerid":11,"tiledversion":"1.12.2","type":"map","version":"1.10"}}}
+}

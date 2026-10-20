@@ -1,0 +1,87 @@
+{
+  "note": "Golden ffworld v1 fixture. Every copy of the format library must decode fixture.world to these hashes, re-encode it to the same raw payloads, and (when process.versions.zlib equals `zlib`) to the same pack bytes.",
+  "bun": "1.4.3",
+  "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+  "xxh64Vectors": {
+    "": "ef46db3751d8e999",
+    "a": "d24ec4f1a98c6e5b",
+    "abc": "44bc2cf5ad770999",
+    "0..99": "6ac1e58032166597"
+  },
+  "payloadVector": {
+    "chunkSize": 8,
+    "layerMask": 15,
+    "encodings": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ],
+    "rawHex": "010000000500000002000000c90100000102000000000000030000000000000000000300060009000c000f001200150018001b001e002100240027002a002d0030003300360039003c003f004200450048004b004e005100540057005a005d0060006300660069006c006f007200750078007b007e008100840087008a008d0090009300960099009c009f00a200a500a800ab00ae00b100b400b700ba00bd000400000000000000000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e00000007000080",
+    "contentHash": "fad0892b7057e8d5"
+  },
+  "manifestHash": "1685f60a2e853550",
+  "generationId": "1adbdaa3309c839a",
+  "tiledSourceHash": "1adbdaa3309c839a",
+  "files": {
+    "collision.bits": {
+      "bytes": 8224,
+      "xxh64": "14a27579e5ac00eb"
+    },
+    "manifest.json": {
+      "bytes": 5725,
+      "xxh64": "1685f60a2e853550"
+    },
+    "nopvp.bits": {
+      "bytes": 8224,
+      "xxh64": "0c2981f9f5459efe"
+    },
+    "packs/r0_0.ffp": {
+      "bytes": 66303,
+      "xxh64": "a9834cb6c4d3be57"
+    }
+  },
+  "packs": [
+    {
+      "px": 0,
+      "py": 0,
+      "file": "packs/r0_0.ffp",
+      "packHash": "8de5956ada71b874",
+      "packRev": 0
+    }
+  ],
+  "bitsets": {
+    "collision": {
+      "hash": "566cb01f898a5d9c",
+      "setBits": 20220
+    },
+    "nopvp": {
+      "hash": "047e9c063635aa87",
+      "setBits": 4486
+    }
+  },
+  "layerTileHashes": {
+    "Ground": "5d4cc0c8a0e20581",
+    "Cliffs/Objects": "c360598d4fcc0a2f",
+    "Details (Below Player 1)": "6d1ed10719018981",
+    "Details (Below Player 2)": "a8b23b81b89b7b8b",
+    "Details (Above Player 1)": "4c78b751d96260d7",
+    "Details (Above Player 2)": "49a55469c03b08b1",
+    "nopvpzone": "af87b3f74f5c7aa8",
+    "Collisions": "086e15532b3c1866"
+  },
+  "stats": {
+    "chunks": 16,
+    "nonEmptyChunks": 16,
+    "encodings": [
+      25,
+      1,
+      19,
+      82,
+      1
+    ],
+    "rawBytes": 698680,
+    "storedBytes": 58047
+  }
+}
